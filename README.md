@@ -17,16 +17,18 @@ Steps to Run the FTP project:
 
 
 FTP command list (or how to execute command)
+----------------------------------------------
 	We have implemented the following commands:
-		1) send --- File upload to the server.
-		2) receive --- Download files from the server to Current working directory.
-		3) cd --- Change the current working directory in the server.
-		4) mkdir --- Create a new directory in the server.
-		5) rmdir --- Removes a directory in the server (only if there is no files in the directory).
-		6) delete --- deletes a file from the server.
-		7) list --- Lists all the files and directories in the Current working directory.
+	1) send --- File upload to the server.
+	2) receive --- Download files from the server to Current working directory.
+	3) cd --- Change the current working directory in the server.
+	4) mkdir --- Create a new directory in the server.
+	5) rmdir --- Removes a directory in the server (only if there is no files in the directory).
+	6) delete --- deletes a file from the server.
+	7) list --- Lists all the files and directories in the Current working directory.
 		
 sample scenario ( Server function/ Client function /upload / download)
+------------------------------------------------------------------------
 	Multiple clients can be connected to the server at a time. Each client can execute any command. 
 	Scenario 1: Client1 and Client 2 are connected to the server, Client1 can upload a new file during this time client2 cannot delete or receive this file until the file upload completes.
 	Scenario 2: Client1 and Client2 are connected to the server at a time, If client2 downloading a big file from the server and at the same time if the client1 gives a delete command to delete the same file which client2 downloading, there won't be any error. The file will be deleted but the client2 will also receive the full file.
