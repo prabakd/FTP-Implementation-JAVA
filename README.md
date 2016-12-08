@@ -4,7 +4,7 @@ FTP protocol implementation using JAVA AWT/Swing
 1. Working Environment : Java 8
 2. Program Requirement ( IDE, library, test tool) : 
 	NetBeans IDE 8.1
-3. How to compile and execute your project program.
+
 Steps to Run the FTP project:
 --------------------------------
 	1) First you need to compile and run the server program (FTPServer.java).
